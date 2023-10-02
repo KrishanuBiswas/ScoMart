@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoMart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Modal</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    
+<nav class="navbar">
+    <div class="nav-brand">ScoMart</div>
+
+    <div class="search-container">
+       
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <button id="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
+              </svg>Search</button>
+        </div>
+         <div class="nav-links">
+        <div class="nav-links">
+            <a href="shop"></a>
+        <button id="shop-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+            <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+          </svg>Shop</button>
+        
+        </div>
+        
+        <button class="signin-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>Sign In</button>
+          <div class = "Overlay"> </div>
+          <div class="loginfrom">
+            <span>&time</span>
+            <form action="">
+                <Div>
+                <label for="User name"></label>
+                <input type="text">
+            </Div>
+            <Div>
+                <label for="Passwors"></label>
+                <input type="password">
+            </Div>
+            <Button>login</Button>
+            </form>
+
+          </div>
+          
+        <button id="cart-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>Cart</button>
+        <button id="Help-but"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-signal" viewBox="0 0 16 16">
+            <path d="m6.08.234.179.727a7.264 7.264 0 0 0-2.01.832l-.383-.643A7.9 7.9 0 0 1 6.079.234zm3.84 0L9.742.96a7.265 7.265 0 0 1 2.01.832l.388-.643A7.957 7.957 0 0 0 9.92.234zm-8.77 3.63a7.944 7.944 0 0 0-.916 2.215l.727.18a7.264 7.264 0 0 1 .832-2.01l-.643-.386zM.75 8a7.3 7.3 0 0 1 .081-1.086L.091 6.8a8 8 0 0 0 0 2.398l.74-.112A7.262 7.262 0 0 1 .75 8zm11.384 6.848-.384-.64a7.23 7.23 0 0 1-2.007.831l.18.728a7.965 7.965 0 0 0 2.211-.919zM15.251 8c0 .364-.028.727-.082 1.086l.74.112a7.966 7.966 0 0 0 0-2.398l-.74.114c.054.36.082.722.082 1.086zm.516 1.918-.728-.18a7.252 7.252 0 0 1-.832 2.012l.643.387a7.933 7.933 0 0 0 .917-2.219zm-6.68 5.25c-.72.11-1.453.11-2.173 0l-.112.742a7.99 7.99 0 0 0 2.396 0l-.112-.741zm4.75-2.868a7.229 7.229 0 0 1-1.537 1.534l.446.605a8.07 8.07 0 0 0 1.695-1.689l-.604-.45zM12.3 2.163c.587.432 1.105.95 1.537 1.537l.604-.45a8.06 8.06 0 0 0-1.69-1.691l-.45.604zM2.163 3.7A7.242 7.242 0 0 1 3.7 2.163l-.45-.604a8.06 8.06 0 0 0-1.691 1.69l.604.45zm12.688.163-.644.387c.377.623.658 1.3.832 2.007l.728-.18a7.931 7.931 0 0 0-.916-2.214zM6.913.831a7.254 7.254 0 0 1 2.172 0l.112-.74a7.985 7.985 0 0 0-2.396 0l.112.74zM2.547 14.64 1 15l.36-1.549-.729-.17-.361 1.548a.75.75 0 0 0 .9.902l1.548-.357-.17-.734zM.786 12.612l.732.168.25-1.073A7.187 7.187 0 0 1 .96 9.74l-.727.18a8 8 0 0 0 .736 1.902l-.184.79zm3.5 1.623-1.073.25.17.731.79-.184c.6.327 1.239.574 1.902.737l.18-.728a7.197 7.197 0 0 1-1.962-.811l-.007.005zM8 1.5a6.502 6.502 0 0 0-6.498 6.502 6.516 6.516 0 0 0 .998 3.455l-.625 2.668L4.54 13.5a6.502 6.502 0 0 0 6.93-11A6.516 6.516 0 0 0 8 1.5"/>
+          </svg>
+          </svg> Chat</button>
+        </div>
+    </div>
+</nav>
+
+
+      </form>
+    </div>
+  </nav>
+<div class="product">
+    <img src="jurcy.jpg" alt="Product 1">
+    <h3>Jurcy</h3>
+    <p>Portugal jurcy</p>
+    <p>Price: 5999</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+
+
+</div>
+
+<div class="product">
+    <img src="Football.jpg" alt="Product 2">
+    <h3>Football</h3>
+    <p>Adidas Worldcup Football</p>
+    <p>Price: 3329</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+
+</div>
+
+<div class="product">
+    <img src="Locket.jpg" alt="Product 3">
+    <h3>Locket</h3>
+    <p>Metalic Locket</p>
+    <p>Price: 1349</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+
+</div>
+
+<div class="product">
+    <img src="Boots.jfif" alt="Product 4">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+
+</div>
+
+<div class="product">
+    <img src="A.jfif" alt="Product 5">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 6">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 7">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 8">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 9">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 10">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 11">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 12">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 13">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 14">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 15">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 16">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 17">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 18">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 19">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 20">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 20">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 22">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 23">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+<div class="product">
+    <img src="A.jfif" alt="Product 24">
+    <h3>Football Boot</h3>
+    <p>Nike football boot</p>
+    <p>Price: 2049</p>
+    <button>Add to Cart</button>
+    <button class="buy-btn">Buy</button>
+    <button class="bargain-btn">Bargain</button> 
+</div>
+
+
+<!--Log in from-->
+
+
+<!-- Ideally, a footer with more info, links, etc. would follow. -->
+<script src="final.js"></script>
+
+</body>
+</html>
