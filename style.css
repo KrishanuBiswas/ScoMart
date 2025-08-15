@@ -238,3 +238,70 @@ button:hover {
     top: 0px;
     text-align: center;
 }
+
+/* Bargain modal and negotiated price styles */
+.price-old {
+    text-decoration: line-through;
+    color: #777;
+    margin-right: 6px;
+}
+
+.price-new {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.bargain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.bargain-modal {
+    background: #fff;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bargain-modal h3 {
+    margin: 0 0 8px 0;
+}
+
+.bargain-modal .price-info {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.bargain-modal input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.bargain-modal .message {
+    margin-top: 10px;
+    min-height: 24px;
+}
+
+.bargain-modal .actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.bargain-hidden {
+    display: none;
+}
